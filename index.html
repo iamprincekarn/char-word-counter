@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time character counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h2>Real time character counter</h2>
+        <p class="heading">
+            Check your English text for grammar,spelling and punctuation errors with iamprincekarn real time character
+            counter
+            website
+        </p>
+        <div id="textareadiv">
+            <textarea id="txtarea" placeholder="Write here please!" oninput="calculateWords()"></textarea>
+        </div>
+        <div id="copytextButtonid">
+            <button id="copytextBtn" onclick="copyText()">
+                copy text
+            </button>
+        </div>
+        <div id="charCalcid">
+            <p class="charCalc">Total character: <span id="totalChar" >0</span></p>
+            
+
+            <p class="charCalc">Total words: <span id="totalWords">0</span></p>
+            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
